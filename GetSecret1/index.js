@@ -7,6 +7,7 @@ const getADTokenForVaultAsync = () => {
     
     const vaultResourceUrl = 'https://vault.azure.net';
     const apiVersion = '2017-09-01';
+    
 
     var options = {
         uri: `${process.env["MSI_ENDPOINT"]}/?resource=${vaultResourceUrl}&api-version=${apiVersion}`,
